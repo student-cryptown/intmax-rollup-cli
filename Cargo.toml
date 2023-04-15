@@ -1,6 +1,6 @@
 [package]
 name = "intmax"
-version = "2.0.2-alpha"
+version = "2.0.3-alpha"
 edition = "2021"
 
 [dependencies]
@@ -22,7 +22,8 @@ curl = "0.4.44"
 
 [features]
 default = ["parallel", "interoperability"]
-verbose = []
+verbose = ["advanced"]
 parallel = ["intmax-rollup-interface/parallel"]
+advanced = []
 interoperability = []
 bridge = []
