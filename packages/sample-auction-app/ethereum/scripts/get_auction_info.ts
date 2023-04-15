@@ -13,6 +13,10 @@ async function main() {
 
   const largestBidder = await simpleAuction.largestBidder();
   console.log("largestBidder:", largestBidder);
+  const auctionCloseAt = await simpleAuction.closingTime().then((bn) => new Date(bn.toNumber() * 1000))
+  console.log("auctionCloseAt:", auctionCloseAt.toLocaleString());
+  const auctionIsClosed = Date.now() > auctionCloseAt.getTime();
+  console.log("auctionIsClosed:", auctionIsClosed);
 }
 
 main().catch((error) => {

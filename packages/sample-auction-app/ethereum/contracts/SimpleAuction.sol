@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier
 pragma solidity 0.8.17;
 
 import "@intmax/interoperability-contracts/contracts/OfferManager.sol";
